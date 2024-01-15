@@ -1,0 +1,64 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+body{
+    background-color:hsl(47, 88%, 63%);
+    height: 100vh;
+    display: flex;
+    align-items: center;
+    justify-content: center;   
+}
+.tarjeta{
+    background-color: hsl(0, 0%, 100%);
+    width: 20rem;
+    height: 30rem;
+    border-radius: 20px;
+    border: 1px solid black;
+    box-shadow: 12px 12px 0 black;
+}
+.header__image{
+    width: 100%;
+    padding: 1rem;
+    border-radius: 25px;
+}
+.tarjeta__contenido{
+    display: flex;
+    flex-direction: column;
+    gap: 1rem;
+    padding: 1rem;
+}
+.contenido__button{
+    align-self: flex-start;
+    background-color:hsl(47, 88%, 63%);
+    color: black;
+    font-weight: 900;
+    border: 0;
+    border-radius: 4px;
+    padding:.3rem .7rem;
+}
+.contenido__title:hover{
+    color: hsl(47, 88%, 63%);
+}
+.contenido__parrafo{
+    color: hsl(0, 0%, 50%);
+}
+.tarjeta__pie{
+    display: flex;
+    align-items: center;
+    gap: .7rem;
+    padding-inline: 1rem;
+}
+.pie__imagen{
+    width: 2.5rem;
+    height: 2.5rem;
+}
+.pie__nombre{
+    font-weight: 900;
+}
+@media (max-width: 767px){
+    .tarjeta{
+        box-shadow: 7px 7px 0 black;
+    }
+}
